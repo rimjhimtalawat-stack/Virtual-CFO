@@ -6,65 +6,69 @@
   <title>Rimjhim Kumari – Virtual CFO</title>
 
   <style>
+    /* GLOBAL */
     body {
-      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      background: #f5f7fb;
+      background: #f4f7fc;
       color: #1f2933;
-      line-height: 1.75;
-      font-size: 18px;
+      line-height: 1.8;
+      font-size: 19px;
+      padding-bottom: 80px; /* FIX: prevents sticky bar overlap */
     }
 
+    /* HEADER */
     header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      background: linear-gradient(135deg, #0f172a, #1e40af);
       color: #ffffff;
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 12px;
       font-weight: 600;
-      letter-spacing: 0.5px;
     }
 
     header p {
-      font-size: 20px;
-      opacity: 0.9;
+      font-size: 21px;
+      opacity: 0.95;
     }
 
+    /* SECTIONS */
     section {
-      padding: 70px 20px;
-      max-width: 1100px;
+      padding: 80px 20px;
+      max-width: 1150px;
       margin: auto;
     }
 
     h2 {
       color: #0f172a;
-      font-size: 30px;
-      margin-bottom: 18px;
+      font-size: 32px;
+      margin-bottom: 22px;
       font-weight: 600;
     }
 
     h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      color: #1e3a8a;
+      font-size: 23px;
+      color: #1e40af;
+      margin-bottom: 12px;
     }
 
+    /* CARDS */
     .card {
       background: #ffffff;
-      padding: 35px;
+      padding: 40px;
       border-radius: 14px;
-      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-      margin-bottom: 35px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 35px;
     }
 
     ul {
@@ -72,33 +76,36 @@
     }
 
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
+    /* CTA */
     .cta {
       background: #2563eb;
       color: #ffffff;
-      padding: 16px 34px;
+      padding: 18px 36px;
       border-radius: 8px;
       display: inline-block;
       text-decoration: none;
-      margin-top: 25px;
+      margin-top: 30px;
       font-weight: 600;
       font-size: 18px;
     }
 
     .cta:hover {
-      background: #1e40af;
+      background: #1e3a8a;
     }
 
+    /* FOOTER */
     footer {
       background: #0f172a;
       color: #ffffff;
       text-align: center;
-      padding: 30px;
+      padding: 35px;
       font-size: 16px;
     }
 
+    /* STICKY BAR */
     .sticky-bar {
       position: fixed;
       bottom: 0;
@@ -107,7 +114,7 @@
       padding: 14px;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 35px;
       z-index: 1000;
     }
 
@@ -118,18 +125,19 @@
       font-size: 16px;
     }
 
+    /* WHATSAPP */
     .whatsapp {
       position: fixed;
-      bottom: 90px;
+      bottom: 95px;
       right: 22px;
       background: #25D366;
       color: #ffffff;
-      padding: 16px 22px;
+      padding: 16px 24px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
       font-size: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
     }
   </style>
 </head>
@@ -138,10 +146,11 @@
 
 <header>
   <h1>Rimjhim Kumari – Virtual CFO</h1>
-  <p>Cash clarity • Financial control • Confident decision-making</p>
+  <p>Financial clarity • Cash discipline • Confident decision-making</p>
   <a class="cta" href="mailto:Rimjhimtalawat@gmail.com">Book a Consultation</a>
 </header>
 
+<!-- ABOUT ME -->
 <section>
   <h2>About Me</h2>
   <div class="card">
@@ -157,47 +166,59 @@
   </div>
 </section>
 
+<!-- SERVICES -->
 <section>
   <h2>Services Offered</h2>
   <div class="grid">
+
     <div class="card">
-      <h3>Cash Flow Management</h3>
+      <h3>Cash Flow & Working Capital</h3>
       <ul>
-        <li>30–60–90 day cash flow visibility</li>
-        <li>Receivables & payables optimisation</li>
+        <li>Monthly and rolling cash flow visibility</li>
+        <li>Receivables and payables discipline</li>
         <li>Cash stress identification</li>
+        <li>Liquidity planning and prioritisation</li>
+        <li>Support for short-term funding decisions</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Monthly MIS & Dashboards</h3>
+      <h3>MIS & Financial Reporting</h3>
       <ul>
-        <li>Founder and finance-team friendly dashboards</li>
+        <li>Founder and finance-team friendly MIS</li>
         <li>Profit vs cash clarity</li>
-        <li>Key alerts & red flags</li>
+        <li>Key metrics and trend analysis</li>
+        <li>Early warning indicators</li>
+        <li>Monthly performance reviews</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Compliance & Risk Oversight</h3>
       <ul>
-        <li>GST & TDS tracking</li>
-        <li>Penalty & notice risk reduction</li>
-        <li>Control and discipline setup</li>
+        <li>GST and TDS compliance tracking</li>
+        <li>Penalty and notice risk reduction</li>
+        <li>Statutory calendar discipline</li>
+        <li>Review of past compliance exposures</li>
+        <li>Ongoing risk monitoring</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Strategic Financial Support</h3>
+      <h3>Cost Control & Profitability</h3>
       <ul>
-        <li>Profitability analysis</li>
-        <li>Cost control frameworks</li>
-        <li>Decision support for management</li>
+        <li>Cost structure review</li>
+        <li>Identification of expense leakages</li>
+        <li>Margin analysis</li>
+        <li>Support for pricing decisions</li>
+        <li>Sustainable profitability focus</li>
       </ul>
     </div>
+
   </div>
 </section>
 
+<!-- CONTACT -->
 <section>
   <h2>Contact</h2>
   <div class="card">
@@ -222,3 +243,4 @@
 
 </body>
 </html>
+
