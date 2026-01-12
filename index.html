@@ -10,13 +10,13 @@
 
     body {
       font-family: "Segoe UI", Calibri, Arial, sans-serif;
-      background:#f8fafc;
+      background:#f4f7fb;
       color:#1f2937;
       line-height:1.7;
     }
 
     header {
-      background:linear-gradient(135deg,#0f172a,#1e3a8a);
+      background:linear-gradient(135deg,#0f172a,#1e40af);
       color:#fff;
       padding:90px 10%;
     }
@@ -31,22 +31,33 @@
       font-size:20px;
       max-width:800px;
       margin-bottom:35px;
+      opacity:0.95;
     }
 
     .cta {
       display:inline-block;
       background:#facc15;
       color:#0f172a;
-      padding:14px 30px;
+      padding:14px 32px;
       border-radius:6px;
       font-weight:600;
       text-decoration:none;
       margin-right:15px;
     }
 
+    .cta.secondary {
+      background:#e0e7ff;
+      color:#1e3a8a;
+    }
+
     section {
       padding:80px 10%;
       border-top:1px solid #e5e7eb;
+      background:#ffffff;
+    }
+
+    section.alt {
+      background:#f1f5f9;
     }
 
     h2 {
@@ -69,29 +80,23 @@
 
     .grid {
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:30px;
     }
 
     .card {
-      background:#fff;
-      padding:32px;
+      background:#ffffff;
+      padding:34px;
       border-radius:10px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      box-shadow:0 12px 30px rgba(0,0,0,0.06);
       transition:transform 0.25s ease;
+      border-left:5px solid #1e40af;
     }
 
     .card:hover { transform:translateY(-5px); }
 
-    img {
-      width:100%;
-      border-radius:8px;
-      border:1px solid #e5e7eb;
-    }
-
     ul { padding-left:20px; }
     ul li { margin-bottom:10px; font-size:17px; }
-    ol li { margin-bottom:12px; font-size:17px; }
 
     .center { text-align:center; }
 
@@ -111,97 +116,59 @@
 <header>
   <h1>Virtual CFO Advisory for MSMEs & Growing Companies</h1>
   <p>
-    Financial oversight focused on cash flow, working capital, risk visibility,
-    and decision support — without the cost of a full-time CFO.
+    Helping business owners bring cash flow clarity, financial discipline,
+    and decision confidence — without hiring a full-time CFO.
   </p>
-  <a href="#contact" class="cta">Schedule a Consultation</a>
-  <a href="#engagement" class="cta">View Engagement Overview</a>
+  <a href="#contact" class="cta">Schedule a 30-min CFO Discussion</a>
+  <a href="#industries" class="cta secondary">Choose Your Industry</a>
 </header>
 
 <section>
   <h2>About Me</h2>
   <p>
-    I work as a Virtual CFO with MSMEs and growing companies to bring financial clarity,
-    discipline, and structure into their finance function. My role goes beyond accounting
-    and compliance — focusing on cash flow control, working capital management,
-    risk identification, and decision support.
+    I work as an independent Virtual CFO supporting MSMEs and growth-stage companies
+    with financial structure, cash flow control, and risk visibility.
+    My focus is not bookkeeping — it is financial decision support.
   </p>
+</section>
+
+<section id="industries" class="alt">
+  <h2>Industry-Specific VCFO Support</h2>
   <p>
-    I partner closely with business owners and finance teams to ensure that financial data
-    is converted into clear insights, priorities, and actions that support sustainable
-    business growth and predictable performance.
+    Different businesses face different financial pressures.
+    Select your industry to understand how VCFO support applies to your context.
   </p>
-</section>
 
-<section>
-  <h2>Who This Is For / Not For</h2>
   <div class="grid">
     <div class="card">
-      <h3>This is a strong fit if:</h3>
-      <ul>
-        <li>Your business is growing but cash visibility is weak</li>
-        <li>You have accounting data but lack decision-ready insights</li>
-        <li>Finance feels reactive instead of controlled</li>
-        <li>You want senior financial oversight without full-time hiring</li>
-      </ul>
+      <h3>Manufacturing & Trading</h3>
+      <p>Working capital, inventory lock-up, receivable delays.</p>
+      <a href="manufacturing.html">View Industry Page →</a>
     </div>
+
     <div class="card">
-      <h3>This may not be suitable if:</h3>
-      <ul>
-        <li>You only require bookkeeping or return filing</li>
-        <li>You are seeking short-term accounting support</li>
-        <li>You are unwilling to implement financial discipline</li>
-      </ul>
+      <h3>Professional Services</h3>
+      <p>Revenue timing gaps, cash predictability, cost discipline.</p>
+      <a href="services.html">View Industry Page →</a>
+    </div>
+
+    <div class="card">
+      <h3>Startups & Growth Businesses</h3>
+      <p>Burn rate control, runway planning, founder decisions.</p>
+      <a href="startups.html">View Industry Page →</a>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>How I Work as a Virtual CFO</h2>
+<section class="center">
   <div class="card">
-    <ol>
-      <li>Understand the business model and financial structure</li>
-      <li>Create visibility across cash, receivables, and payables</li>
-      <li>Identify risks early and highlight priorities</li>
-      <li>Support decisions with financial implications</li>
-      <li>Review monthly to ensure control and predictability</li>
-    </ol>
-  </div>
-</section>
-
-<section>
-  <h2>Real Dashboards Used During Engagements</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="dashboard_cashflow.png" alt="Cash Flow Dashboard">
-      <p><strong>Cash Flow Dashboard</strong><br>
-      Monthly and rolling visibility of inflows, outflows, and liquidity position.</p>
-    </div>
-
-    <div class="card">
-      <img src="dashboard_workingcapital.png" alt="Working Capital Dashboard">
-      <p><strong>Working Capital Dashboard</strong><br>
-      Receivables and payables ageing to identify cash blockages and pressure points.</p>
-    </div>
-
-    <div class="card">
-      <img src="dashboard_risk.png" alt="Risk Dashboard">
-      <p><strong>Risk & Control Dashboard</strong><br>
-      Early warning indicators across cash stress, compliance, and operational risks.</p>
-    </div>
-  </div>
-</section>
-
-<section id="engagement" class="center">
-  <div class="card">
-    <h2>VCFO Engagement Overview</h2>
+    <h2>Coming from LinkedIn?</h2>
     <p>
-      A structured overview of scope, approach, cadence, and deliverables
-      for a Virtual CFO engagement.
+      If you found this page via LinkedIn and are evaluating
+      Virtual CFO support for your business,
+      the fastest next step is a focused discussion.
     </p>
-    <a class="cta" href="Rimjhim_Kumari_Virtual_CFO_Proposal.pdf" download>
-      Download VCFO Engagement Overview
-    </a>
+    <a href="#contact" class="cta">Book a CFO Discussion</a>
   </div>
 </section>
 
@@ -223,4 +190,3 @@
 
 </body>
 </html>
-
