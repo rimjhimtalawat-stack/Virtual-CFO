@@ -2,20 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rimjhim Kumari | Virtual CFO Advisory</title>
+  <meta name="description" content="Virtual CFO advisory services focused on cash flow control, working capital discipline, and decision support for MSMEs and growing businesses.">
 
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-
     body {
       font-family: "Segoe UI", Calibri, Arial, sans-serif;
-      background:#f4f7fb;
+      background:#f8fafc;
       color:#1f2937;
+      padding:120px 12%;
       line-height:1.7;
     }
 
-    <nav class="top-nav">
+    .top-nav {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      background:#ffffff;
+      border-bottom:1px solid #e5e7eb;
+      padding:14px 12%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+
+    .nav-brand {
+      font-weight:700;
+      font-size:18px;
+      color:#0f172a;
+    }
+
+    .nav-links a {
+      margin-left:20px;
+      color:#1e40af;
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    header h1 {
+      font-size:44px;
+      color:#0f172a;
+      margin-bottom:15px;
+    }
+
+    header p {
+      font-size:20px;
+      max-width:800px;
+      margin-bottom:25px;
+      opacity:0.95;
+    }
+
+    .cta {
+      display:inline-block;
+      background:#facc15;
+      color:#0f172a;
+      padding:14px 32px;
+      font-weight:600;
+      text-decoration:none;
+      border-radius:6px;
+      margin-right:15px;
+    }
+
+    section {
+      margin-top:60px;
+      padding-top:30px;
+      border-top:1px solid #e5e7eb;
+    }
+
+    h2 {
+      font-size:32px;
+      color:#0f172a;
+      margin-bottom:20px;
+    }
+
+    p {
+      font-size:18px;
+      margin-bottom:15px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
   <div class="nav-brand">Rimjhim Kumari | Virtual CFO</div>
   <div class="nav-links">
     <a href="index.html">Home</a>
@@ -25,179 +96,38 @@
   </div>
 </nav>
 
-    header {
-      background:linear-gradient(135deg,#0f172a,#1e40af);
-      color:#fff;
-      padding:90px 10%;
-    }
-
-    header h1 {
-      font-size:44px;
-      margin-bottom:20px;
-      max-width:900px;
-    }
-
-    header p {
-      font-size:20px;
-      max-width:800px;
-      margin-bottom:35px;
-      opacity:0.95;
-    }
-
-    .cta {
-      display:inline-block;
-      background:#facc15;
-      color:#0f172a;
-      padding:14px 32px;
-      border-radius:6px;
-      font-weight:600;
-      text-decoration:none;
-      margin-right:15px;
-    }
-
-    .cta.secondary {
-      background:#e0e7ff;
-      color:#1e3a8a;
-    }
-
-    section {
-      padding:80px 10%;
-      border-top:1px solid #e5e7eb;
-      background:#ffffff;
-    }
-
-    section.alt {
-      background:#f1f5f9;
-    }
-
-    h2 {
-      font-size:32px;
-      margin-bottom:30px;
-      color:#0f172a;
-    }
-
-    h3 {
-      font-size:22px;
-      margin-bottom:15px;
-      color:#1e3a8a;
-    }
-
-    p {
-      font-size:18px;
-      max-width:950px;
-      margin-bottom:20px;
-    }
-
-    .grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:30px;
-    }
-
-    .card {
-      background:#ffffff;
-      padding:34px;
-      border-radius:10px;
-      box-shadow:0 12px 30px rgba(0,0,0,0.06);
-      transition:transform 0.25s ease;
-      border-left:5px solid #1e40af;
-    }
-
-    .card:hover { transform:translateY(-5px); }
-
-    ul { padding-left:20px; }
-    ul li { margin-bottom:10px; font-size:17px; }
-
-    .center { text-align:center; }
-
-    footer {
-      background:#0f172a;
-      color:#fff;
-      padding:45px 10%;
-      text-align:center;
-    }
-
-    footer a { color:#facc15; text-decoration:none; }
-  </style>
-</head>
-
-<body>
-
 <header>
   <h1>Virtual CFO Advisory for MSMEs & Growing Companies</h1>
   <p>
-    Helping business owners bring cash flow clarity, financial discipline,
-    and decision confidence — without hiring a full-time CFO.
+    Helping business owners bring cash flow clarity, financial discipline, and decision confidence — without hiring a full-time CFO.
   </p>
   <a href="#contact" class="cta">Schedule a 30-min CFO Discussion</a>
-  <a href="#industries" class="cta secondary">Choose Your Industry</a>
+  <a href="#industries" class="cta">Choose Your Industry</a>
 </header>
 
 <section>
   <h2>About Me</h2>
   <p>
-    I work as an independent Virtual CFO supporting MSMEs and growth-stage companies
-    with financial structure, cash flow control, and risk visibility.
-    My focus is not bookkeeping — it is financial decision support.
+    I work as an independent Virtual CFO supporting MSMEs and growth-stage companies with financial structure, cash flow control, and risk visibility. My focus is not bookkeeping — it is financial decision support.
   </p>
 </section>
 
-<section id="industries" class="alt">
+<section id="industries">
   <h2>Industry-Specific VCFO Support</h2>
-  <p>
-    Different businesses face different financial pressures.
-    Select your industry to understand how VCFO support applies to your context.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Manufacturing & Trading</h3>
-      <p>Working capital, inventory lock-up, receivable delays.</p>
-      <a href="manufacturing.html">View Industry Page →</a>
-    </div>
-
-    <div class="card">
-      <h3>Professional Services</h3>
-      <p>Revenue timing gaps, cash predictability, cost discipline.</p>
-      <a href="services.html">View Industry Page →</a>
-    </div>
-
-    <div class="card">
-      <h3>Startups & Growth Businesses</h3>
-      <p>Burn rate control, runway planning, founder decisions.</p>
-      <a href="startups.html">View Industry Page →</a>
-    </div>
-  </div>
-</section>
-
-<section class="center">
-  <div class="card">
-    <h2>Coming from LinkedIn?</h2>
-    <p>
-      If you found this page via LinkedIn and are evaluating
-      Virtual CFO support for your business,
-      the fastest next step is a focused discussion.
-    </p>
-    <a href="#contact" class="cta">Book a CFO Discussion</a>
-  </div>
+  <p>Select your industry to understand how VCFO support applies.</p>
+  <ul>
+    <li><a href="manufacturing.html">Manufacturing & Trading</a></li>
+    <li><a href="services.html">Professional Services</a></li>
+    <li><a href="startups.html">Startups & Growth Businesses</a></li>
+  </ul>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <p><strong>Email:</strong> Rimjhimtalawat@gmail.com</p>
   <p><strong>Phone:</strong> +91 9003170474</p>
-  <p>
-    <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/rimjhimkumarii" target="_blank">
-      www.linkedin.com/in/rimjhimkumarii
-    </a>
-  </p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rimjhimkumarii" target="_blank">www.linkedin.com/in/rimjhimkumarii</a></p>
 </section>
-
-<footer>
-  <p>© 2026 Rimjhim Kumari | Virtual CFO Advisory</p>
-</footer>
 
 </body>
 </html>
-
