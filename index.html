@@ -1,246 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rimjhim Kumari – Virtual CFO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimjhim Kumari | Virtual CFO Advisory</title>
 
   <style>
-    /* GLOBAL */
+    * { margin:0; padding:0; box-sizing:border-box; }
+
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      background: #f4f7fc;
-      color: #1f2933;
-      line-height: 1.8;
-      font-size: 19px;
-      padding-bottom: 80px; /* FIX: prevents sticky bar overlap */
+      font-family: "Segoe UI", Calibri, Arial, sans-serif;
+      background:#f8fafc;
+      color:#1f2937;
+      line-height:1.7;
     }
 
-    /* HEADER */
     header {
-      background: linear-gradient(135deg, #0f172a, #1e40af);
-      color: #ffffff;
-      padding: 90px 20px;
-      text-align: center;
+      background:linear-gradient(135deg,#0f172a,#1e3a8a);
+      color:#fff;
+      padding:90px 10%;
     }
 
     header h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
-      font-weight: 600;
+      font-size:44px;
+      margin-bottom:20px;
+      max-width:900px;
     }
 
     header p {
-      font-size: 21px;
-      opacity: 0.95;
+      font-size:20px;
+      max-width:800px;
+      margin-bottom:35px;
     }
 
-    /* SECTIONS */
+    .cta {
+      display:inline-block;
+      background:#facc15;
+      color:#0f172a;
+      padding:14px 30px;
+      border-radius:6px;
+      font-weight:600;
+      text-decoration:none;
+      margin-right:15px;
+    }
+
     section {
-      padding: 80px 20px;
-      max-width: 1150px;
-      margin: auto;
+      padding:80px 10%;
+      border-top:1px solid #e5e7eb;
     }
 
     h2 {
-      color: #0f172a;
-      font-size: 32px;
-      margin-bottom: 22px;
-      font-weight: 600;
+      font-size:32px;
+      margin-bottom:30px;
+      color:#0f172a;
     }
 
     h3 {
-      font-size: 23px;
-      color: #1e40af;
-      margin-bottom: 12px;
+      font-size:22px;
+      margin-bottom:15px;
+      color:#1e3a8a;
     }
 
-    /* CARDS */
-    .card {
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-      margin-bottom: 40px;
+    p {
+      font-size:18px;
+      max-width:950px;
+      margin-bottom:20px;
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 35px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
     }
 
-    ul {
-      padding-left: 22px;
+    .card {
+      background:#fff;
+      padding:32px;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      transition:transform 0.25s ease;
     }
 
-    ul li {
-      margin-bottom: 12px;
-    }
+    .card:hover { transform:translateY(-5px); }
 
-    /* CTA */
-    .cta {
-      background: #2563eb;
-      color: #ffffff;
-      padding: 18px 36px;
-      border-radius: 8px;
-      display: inline-block;
-      text-decoration: none;
-      margin-top: 30px;
-      font-weight: 600;
-      font-size: 18px;
-    }
+    ul { padding-left:20px; }
+    ul li { margin-bottom:10px; font-size:17px; }
+    ol li { margin-bottom:12px; font-size:17px; }
 
-    .cta:hover {
-      background: #1e3a8a;
-    }
+    .center { text-align:center; }
 
-    /* FOOTER */
     footer {
-      background: #0f172a;
-      color: #ffffff;
-      text-align: center;
-      padding: 35px;
-      font-size: 16px;
+      background:#0f172a;
+      color:#fff;
+      padding:45px 10%;
+      text-align:center;
     }
 
-    /* STICKY BAR */
-    .sticky-bar {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background: #0f172a;
-      padding: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 35px;
-      z-index: 1000;
-    }
-
-    .sticky-bar a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-    }
-
-    /* WHATSAPP */
-    .whatsapp {
-      position: fixed;
-      bottom: 95px;
-      right: 22px;
-      background: #25D366;
-      color: #ffffff;
-      padding: 16px 24px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
-    }
+    footer a { color:#facc15; text-decoration:none; }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Rimjhim Kumari – Virtual CFO</h1>
-  <p>Financial clarity • Cash discipline • Confident decision-making</p>
-  <a class="cta" href="mailto:Rimjhimtalawat@gmail.com">Book a Consultation</a>
+  <h1>Virtual CFO Advisory for MSMEs & Growing Companies</h1>
+  <p>
+    Senior financial oversight focused on cash flow, working capital, risk visibility,
+    and decision support — without the cost or complexity of a full-time CFO.
+  </p>
+  <a href="#contact" class="cta">Schedule a Consultation</a>
+  <a href="#proposal" class="cta">View Engagement Overview</a>
 </header>
 
-<!-- ABOUT ME -->
 <section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I provide Virtual CFO services to MSMEs and growing companies, with a focus on strengthening financial governance, cash flow discipline, and management reporting.
-    </p>
-    <p>
-      I work closely with finance teams to enhance transparency, identify financial and compliance risks early, and ensure reliable, decision-ready financial information.
-    </p>
-    <p>
-      My approach is structured and analytical, combining financial discipline with practical business understanding to support stable operations and informed decision-making, without the overhead of a full-time CFO.
-    </p>
-  </div>
+  <h2>About the Virtual CFO Practice</h2>
+  <p>
+    This practice partners with MSMEs and growing companies to bring financial structure,
+    predictability, and discipline into the finance function.
+    The focus is not accounting output, but financial control and decision clarity.
+  </p>
+  <p>
+    Engagements are designed to support business owners and finance teams with
+    cash flow visibility, working capital control, risk identification,
+    and structured financial decision-making.
+  </p>
 </section>
 
-<!-- SERVICES -->
 <section>
-  <h2>Services Offered</h2>
+  <h2>Who This Is For / Not For</h2>
   <div class="grid">
-
     <div class="card">
-      <h3>Cash Flow & Working Capital</h3>
+      <h3>This is a strong fit if:</h3>
       <ul>
-        <li>Monthly and rolling cash flow visibility</li>
-        <li>Receivables and payables discipline</li>
-        <li>Cash stress identification</li>
-        <li>Liquidity planning and prioritisation</li>
-        <li>Support for short-term funding decisions</li>
+        <li>Your business is growing but cash visibility is unclear</li>
+        <li>You have accounting data but lack decision-ready insights</li>
+        <li>Finance feels reactive instead of controlled</li>
+        <li>You want senior oversight without hiring full-time</li>
       </ul>
     </div>
-
     <div class="card">
-      <h3>MIS & Financial Reporting</h3>
+      <h3>This may not be suitable if:</h3>
       <ul>
-        <li>Founder and finance-team friendly MIS</li>
-        <li>Profit vs cash clarity</li>
-        <li>Key metrics and trend analysis</li>
-        <li>Early warning indicators</li>
-        <li>Monthly performance reviews</li>
+        <li>You only require bookkeeping or compliance filing</li>
+        <li>You are seeking short-term accounting support</li>
+        <li>You are unwilling to implement financial discipline</li>
       </ul>
     </div>
-
-    <div class="card">
-      <h3>Compliance & Risk Oversight</h3>
-      <ul>
-        <li>GST and TDS compliance tracking</li>
-        <li>Penalty and notice risk reduction</li>
-        <li>Statutory calendar discipline</li>
-        <li>Review of past compliance exposures</li>
-        <li>Ongoing risk monitoring</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Cost Control & Profitability</h3>
-      <ul>
-        <li>Cost structure review</li>
-        <li>Identification of expense leakages</li>
-        <li>Margin analysis</li>
-        <li>Support for pricing decisions</li>
-        <li>Sustainable profitability focus</li>
-      </ul>
-    </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
 <section>
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: <a href="mailto:Rimjhimtalawat@gmail.com">Rimjhimtalawat@gmail.com</a></p>
-    <p>Phone: <a href="tel:+919003170474">+91 9003170474</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rimjhimkumarii" target="_blank">linkedin.com/in/rimjhimkumarii</a></p>
-    <a class="cta" href="mailto:Rimjhimtalawat@gmail.com">Book a Consultation</a>
+  <h2>What Clients Typically Struggle With</h2>
+  <div class="grid">
+    <div class="card"><p>Cash shortages despite reported profits</p></div>
+    <div class="card"><p>Delayed collections and uncontrolled receivables</p></div>
+    <div class="card"><p>Unclear visibility on payables and obligations</p></div>
+    <div class="card"><p>Compliance surprises impacting cash</p></div>
   </div>
+</section>
+
+<section>
+  <h2>How the VCFO Framework Works</h2>
+  <div class="card">
+    <ol>
+      <li>Assess business model and financial structure</li>
+      <li>Create cash flow and working capital visibility</li>
+      <li>Identify risks early across liquidity and compliance</li>
+      <li>Support management decisions with clear implications</li>
+      <li>Review monthly to ensure discipline and control</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>Problems Solved as a Virtual CFO</h2>
+  <div class="grid">
+    <div class="card">Unpredictable cash flow</div>
+    <div class="card">Working capital stress</div>
+    <div class="card">Lack of financial visibility</div>
+    <div class="card">Decision-making without financial context</div>
+  </div>
+</section>
+
+<section>
+  <h2>Portfolio & Engagement Approach</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Sample Dashboards</h3>
+      <p>Cash flow trends, receivable ageing, payable exposure,
+         and risk indicators used during monthly reviews.</p>
+    </div>
+    <div class="card">
+      <h3>Problem → Solution</h3>
+      <p>From cash stress identification to prioritised actions
+         across collections, costs, and obligations.</p>
+    </div>
+    <div class="card">
+      <h3>VCFO Engagement Structure</h3>
+      <p>Monthly reviews, ongoing monitoring, and structured
+         financial decision support.</p>
+    </div>
+  </div>
+</section>
+
+<section id="proposal" class="center">
+  <div class="card">
+    <h2>VCFO Engagement Overview</h2>
+    <p>
+      A concise overview of scope, approach, and deliverables
+      for a Virtual CFO engagement.
+    </p>
+    <a class="cta" href="Rimjhim_Kumari_Virtual_CFO_Proposal.pdf" download>
+      Download VCFO Engagement Overview
+    </a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> Rimjhimtalawat@gmail.com</p>
+  <p><strong>Phone:</strong> +91 9003170474</p>
+  <p>
+    <strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/rimjhimkumarii" target="_blank">
+      www.linkedin.com/in/rimjhimkumarii
+    </a>
+  </p>
 </section>
 
 <footer>
-  <p>© 2026 Rimjhim Kumari | Virtual CFO</p>
+  <p>© 2026 Rimjhim Kumari | Virtual CFO Advisory</p>
 </footer>
-
-<div class="sticky-bar">
-  <a href="mailto:Rimjhimtalawat@gmail.com">Email</a>
-  <a href="tel:+919003170474">Call</a>
-  <a href="https://www.linkedin.com/in/rimjhimkumarii" target="_blank">LinkedIn</a>
-</div>
-
-<a class="whatsapp" href="https://wa.me/919003170474" target="_blank">WhatsApp</a>
 
 </body>
 </html>
-
