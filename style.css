@@ -1,227 +1,212 @@
-/* --------------------
-   GLOBAL RESET
--------------------- */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
-  background: radial-gradient(
-      1200px 600px at 20% -10%,
-      rgba(30, 58, 138, 0.35),
-      transparent
-    ),
-    linear-gradient(180deg, #050b18 0%, #070f22 100%);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  background: radial-gradient(circle at top, #0f1e33, #070f1f);
   color: #e5e7eb;
   line-height: 1.6;
 }
 
-/* --------------------
-   NAVBAR
--------------------- */
-.navbar {
+/* ---------- NAV ---------- */
+nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  background: rgba(7, 15, 31, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 56px;
-  background: rgba(5, 11, 24, 0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.logo {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.navbar nav a {
+nav a {
   color: #e5e7eb;
-  margin-left: 28px;
   text-decoration: none;
+  margin-left: 28px;
   font-size: 14px;
-  opacity: 0.85;
 }
 
-.navbar nav a:hover {
-  opacity: 1;
-}
-
-.navbar .btn {
-  border: 1px solid rgba(255, 255, 255, 0.4);
+.cta {
+  border: 1px solid #e5e7eb;
   padding: 8px 14px;
   border-radius: 6px;
 }
 
-/* --------------------
-   MAIN CONTENT WRAPPER
--------------------- */
-.content {
+/* ---------- SECTIONS ---------- */
+.container {
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 160px 32px 120px;
+  margin: auto;
+  padding: 120px 20px;
 }
 
-/* --------------------
-   SECTION LABEL (SMALL CAPS)
--------------------- */
-.section-label {
+.tag {
   display: inline-block;
   font-size: 11px;
-  letter-spacing: 0.18em;
-  color: #9ca3af;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 6px 10px;
-  border-radius: 4px;
-  margin-bottom: 22px;
+  letter-spacing: 1.5px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 20px;
+  color: #cbd5e1;
 }
 
-/* --------------------
-   HEADINGS & TEXT
--------------------- */
-h1 {
+/* ---------- HERO ---------- */
+.hero h1 {
   font-size: 48px;
-  font-weight: 600;
-  margin: 0 0 18px;
-  color: #ffffff;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 14px;
-  color: #ffffff;
-}
-
-p {
   max-width: 720px;
-  font-size: 17px;
-  color: #cbd5f5;
-  margin-bottom: 40px;
 }
 
-/* --------------------
-   TWO COLUMN SECTION
--------------------- */
-.two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  margin: 80px 0;
+.hero p {
+  max-width: 650px;
+  margin: 26px 0 44px;
+  color: #cbd5e1;
 }
 
-.two-column ul {
-  padding-left: 18px;
-}
-
-.two-column li {
-  margin-bottom: 12px;
-  font-size: 16px;
-  color: #cbd5f5;
-}
-
-/* --------------------
-   PRICING SECTION
--------------------- */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
-  margin: 50px 0 80px;
-}
-
-.pricing-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 28px;
-  transition: all 0.25s ease;
-}
-
-.pricing-card:hover {
-  transform: translateY(-6px);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.pricing-card h3 {
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  color: #9ca3af;
-  margin-bottom: 10px;
-}
-
-.pricing-card p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  margin: 0;
-}
-
-/* --------------------
-   ACTION BUTTONS
--------------------- */
-.actions {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+.buttons a {
+  display: inline-block;
+  margin-right: 18px;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .primary {
   background: #ffffff;
-  color: #050b18;
-  padding: 14px 26px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.primary:hover {
-  background: #e5e7eb;
+  color: #000;
 }
 
 .secondary {
-  color: #e5e7eb;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ---------- INDUSTRY CARDS ---------- */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 44px;
+}
+
+.industry-card {
+  padding: 36px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.25s ease;
+  cursor: pointer;
   text-decoration: none;
-  font-size: 15px;
-  opacity: 0.85;
+  color: inherit;
 }
 
-.secondary:hover {
-  opacity: 1;
+.industry-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* --------------------
-   FOOTER
--------------------- */
+.industry-card h3 {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.industry-card p {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.industry-card span {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* ---------- SPLIT ---------- */
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.split img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/* ---------- TWO COLUMN ---------- */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 80px;
+}
+
+ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+  color: #cbd5e1;
+}
+
+/* ---------- PRICING ---------- */
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.price-card {
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- CONTACT ---------- */
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact-block {
+  margin-bottom: 32px;
+}
+
+.contact-label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.contact-value {
+  font-size: 18px;
+}
+
+.contact-value a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
   text-align: center;
-  padding: 40px 20px;
-  font-size: 13px;
-  color: #9ca3af;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* --------------------
-   RESPONSIVE
--------------------- */
-@media (max-width: 900px) {
-  .two-column {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .pricing-grid {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 38px;
-  }
+  padding: 50px;
+  font-size: 14px;
+  color: #94a3b8;
 }
