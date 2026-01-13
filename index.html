@@ -1,87 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rimjhim Kumari | Virtual CFO Advisory</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <div class="logo">Rimjhim Kumari</div>
-  <a class="btn-outline" href="#contact">Get in Touch</a>
+  <div class="nav-container">
+    <div class="brand">Rimjhim Kumari</div>
+    <a href="#contact" class="btn-outline">Get in Touch</a>
+  </div>
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="hero">
-  <h1>Virtual CFO Advisory<br>for MSMEs & Growing Companies</h1>
-  <p>
-    I work as an independent Virtual CFO supporting MSMEs and growth-stage
-    companies with financial structure, cash flow control, and risk visibility.
-    My focus is not bookkeeping — it is financial decision support.
-  </p>
+  <div class="container">
+    <h1>
+      Virtual CFO Advisory<br/>
+      for MSMEs & Growing Companies
+    </h1>
 
-  <div class="hero-buttons">
-    <a class="btn-primary" href="#contact">Schedule 30 min CFO Discussion</a>
-    <a class="btn-outline" href="#industry">Choose your industry</a>
-  </div>
-</section>
-
-<section id="industry" class="section">
-  <span class="label">Industry-Specific VCFO Support</span>
-  <h2>Select your industry</h2>
-  <p>
-    Different businesses face different financial pressures.
-    Understand how Virtual CFO support applies to yours.
-  </p>
-
-  <div class="grid-3">
-
-    <a href="manufacturing.html" class="card">
-      <h3>Manufacturing & Trading</h3>
-      <p>
-        Working capital pressure, inventory lock-ups,
-        receivable delays, and liquidity stress.
-      </p>
-      <span>View details →</span>
-    </a>
-
-    <a href="services.html" class="card">
-      <h3>Professional Services</h3>
-      <p>
-        Cash predictability issues, delayed collections,
-        rising fixed costs, and profit-cash mismatch.
-      </p>
-      <span>View details →</span>
-    </a>
-
-    <a href="startups.html" class="card">
-      <h3>Startups & Growth Businesses</h3>
-      <p>
-        Runway visibility, burn control,
-        and financially informed growth decisions.
-      </p>
-      <span>View details →</span>
-    </a>
-
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <span class="label">Get Started</span>
-  <h2>Contact</h2>
-
-  <div class="contact-box">
-    <p><strong>Direct Email</strong><br>rimjhimtalawat@gmail.com</p>
-    <p><strong>Phone Number</strong><br>+91 9003170474</p>
-    <p><strong>LinkedIn</strong><br>
-      <a href="https://linkedin.com/in/rimjhimkumarii" target="_blank">
-        linkedin.com/in/rimjhimkumarii
-      </a>
+    <p class="hero-text">
+      I work as an independent Virtual CFO supporting MSMEs and growth-stage companies
+      with financial structure, cash flow control, and risk visibility.
+      My focus is not bookkeeping — it is financial decision support.
     </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Schedule 30 min CFO Discussion</a>
+      <a href="#industries" class="btn-secondary">Choose your industry</a>
+    </div>
   </div>
 </section>
 
-<footer>
+<!-- ================= ABOUT ME ================= -->
+<section class="section-dark">
+  <div class="container narrow">
+
+    <span class="section-tag">EXECUTIVE PROFILE</span>
+    <h2>About Me</h2>
+
+    <blockquote>
+      “Many businesses operate with incomplete financial clarity, even when accounting
+      data exists. My role is to convert financial information into structured insight
+      and decision support.”
+    </blockquote>
+
+    <h3>Problems I Solve</h3>
+    <ul class="bullet-list">
+      <li>Profitable businesses facing recurring cash stress</li>
+      <li>No clear visibility on where cash is getting blocked</li>
+      <li>Decisions taken without understanding financial impact</li>
+      <li>Founders managing finance intuitively rather than structurally</li>
+      <li>Reports available, but no actionable financial insight</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ================= HOW I WORK ================= -->
+<section class="section-dark">
+  <div class="container">
+
+    <span class="section-tag">VCFO FRAMEWORK</span>
+    <h2>How I Work</h2>
+
+    <div class="two-column">
+
+      <div>
+        <h4>Understand</h4>
+        <p>
+          Review business model, financial data, and current processes
+        </p>
+
+        <h4>Create Visibility</h4>
+        <p>
+          Establish cash flow, working capital, and performance clarity
+        </p>
+      </div>
+
+      <div>
+        <h4>Identify Gaps</h4>
+        <p>
+          Highlight risks, leakages, and control weaknesses
+        </p>
+
+        <h4>Support Decisions</h4>
+        <p>
+          Provide financial inputs for operational and strategic choices
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section id="industries" class="section-dark">
+  <div class="container">
+
+    <span class="section-tag">INDUSTRY-SPECIFIC VCFO SUPPORT</span>
+    <h2>Select your industry</h2>
+
+    <div class="card-grid">
+
+      <a href="manufacturing.html" class="card">
+        <h3>Manufacturing & Trading</h3>
+        <p>
+          Working capital pressure, inventory lock-ups,
+          receivable delays, and liquidity stress.
+        </p>
+        <span>View details →</span>
+      </a>
+
+      <a href="services.html" class="card">
+        <h3>Professional Services</h3>
+        <p>
+          Cash predictability issues, delayed collections,
+          rising fixed costs, and profit–cash mismatch.
+        </p>
+        <span>View details →</span>
+      </a>
+
+      <a href="startups.html" class="card">
+        <h3>Startups & Growth Businesses</h3>
+        <p>
+          Runway visibility, burn control, and financially
+          informed growth decisions.
+        </p>
+        <span>View details →</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section-dark">
+  <div class="container narrow">
+
+    <span class="section-tag">GET STARTED</span>
+    <h2>Contact</h2>
+
+    <div class="contact-block">
+      <label>DIRECT EMAIL</label>
+      <p>rimjhimtalawat@gmail.com</p>
+
+      <label>PHONE NUMBER</label>
+      <p>+91 9003170474</p>
+
+      <label>LINKEDIN PROFESSIONAL PROFILE</label>
+      <p>
+        <a href="https://linkedin.com/in/rimjhimkumarii" target="_blank">
+          linkedin.com/in/rimjhimkumarii
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
   © 2026 Rimjhim Kumari. All rights reserved.
 </footer>
 
