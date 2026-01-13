@@ -1,81 +1,128 @@
+/* ===========================
+   GLOBAL RESET & VARIABLES
+=========================== */
+
+:root {
+  --bg-primary: #0b1626;
+  --bg-secondary: #0f1f38;
+  --text-primary: #ffffff;
+  --text-secondary: #b7c4d6;
+  --accent: #5da9ff;
+  --border-soft: rgba(255,255,255,0.08);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: linear-gradient(180deg, #071527, #020b17);
-  color: #d1d9e6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Inter, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #081325 0%, #0b1626 100%);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
+/* ===========================
+   LAYOUT
+=========================== */
 
 .container {
-  width: 90%;
   max-width: 1200px;
   margin: auto;
+  padding: 60px 24px;
 }
 
-/* NAVBAR */
-.nav {
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border-soft);
+  margin-bottom: 60px;
 }
 
 .brand {
   font-weight: 600;
   font-size: 18px;
+  letter-spacing: 0.4px;
 }
 
 .btn {
-  border: 1px solid #ffffff;
-  padding: 10px 20px;
+  padding: 10px 18px;
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  color: var(--text-primary);
+  text-decoration: none;
   font-size: 14px;
+  transition: all 0.25s ease;
 }
 
-/* HERO */
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===========================
+   HERO / HEADER
+=========================== */
+
 .hero {
-  padding: 120px 0;
-}
-
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  max-width: 650px;
-}
-
-.hero p {
-  margin-top: 20px;
-  max-width: 600px;
-  color: #b5c1d6;
-}
-
-/* SECTIONS */
-section {
-  padding: 100px 0;
+  max-width: 720px;
+  margin-bottom: 80px;
 }
 
 .tag {
-  font-size: 11px;
-  letter-spacing: 1px;
-  border: 1px solid #3c4c66;
-  padding: 6px 10px;
   display: inline-block;
-  margin-bottom: 15px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--border-soft);
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  font-size: 17px;
+  color: var(--text-secondary);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section {
+  margin-bottom: 90px;
 }
 
 h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
 }
+
+/* ===========================
+   GRIDS
+=========================== */
 
 .grid-2 {
   display: grid;
@@ -86,46 +133,110 @@ h2 {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 28px;
 }
 
-/* CARDS */
+/* ===========================
+   LISTS
+=========================== */
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding-left: 22px;
+  position: relative;
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* ===========================
+   CARDS (PRICING / INDUSTRY)
+=========================== */
+
 .card {
-  background: rgba(255,255,255,0.03);
-  padding: 40px;
-  border: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.01)
+  );
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
 }
 
 .card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-/* LIST */
-ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-li {
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 
-/* PRICING */
 .price {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
+  color: var(--accent);
 }
 
-/* CONTACT */
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 40px;
+}
+
 .contact p {
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
 }
 
-/* FOOTER */
+/* ===========================
+   FOOTER
+=========================== */
+
 footer {
   text-align: center;
-  padding: 40px 0;
-  color: #8fa3c7;
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-soft);
+  padding-top: 30px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
 }
